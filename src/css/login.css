@@ -1,0 +1,79 @@
+.login {}
+.login .inner {
+  margin: 10vh auto 0;
+  width: 300px;
+}
+.login .login-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.login form {}
+.login form .form-section {}
+.login form .form-section:last-child {
+  margin-top: 110px;
+}
+.login form .form-section input {
+  margin-bottom: 12px;
+}
+.login form .form-section .btn {
+  margin-top: 8px;
+  display: block;
+  width: 100%;
+}
+
+.login form .form-section .login-search {
+  margin-top: 28px;
+}
+.login form .form-section .login-search a {
+  position: relative;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  color: var(--primary);
+  padding: 0 28px;
+}
+.login form .form-section .login-search a:first-child:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 10px;
+  background-color: var(--primary);
+  transform: translateY(-50%);
+}
+
+/* JOIN */
+.login form .form-section .sign-up {}
+.login form .form-section .sign-up a {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+}
+.login form .form-section .sign-up a:first-child {
+  text-decoration: underline;
+  margin-bottom: 26px;
+}
+.login form .form-section .sign-up a.login-ko {
+  padding-left: 22px;
+  position: relative;
+  border-color: #FAE100;
+  color: #381E1F;
+  font-size: 12px;
+  line-height: 36px;
+}
+.login form .form-section .sign-up a.login-ko:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 78px;
+  width: 22px;
+  height: 22px;
+  background: url(../image/ico-ka.png)no-repeat center/ 22px auto;
+  vertical-align: middle;
+  transform: translateY(-50%);
+}

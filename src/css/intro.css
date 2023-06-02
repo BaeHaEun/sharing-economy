@@ -1,0 +1,152 @@
+.intro-wrap {
+  padding: 106px 0;
+}
+.intro-wrap .intro-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 94px;
+}
+.intro-wrap .intro-sub {
+  margin-bottom: 16px;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  text-align: center;
+}
+.intro-wrap .intro-section.top-bg {
+  background-color: var(--tertiary);
+}
+.intro-wrap .intro-section .inner {
+  align-items: center;
+  gap: 83px;
+}
+.intro-wrap .intro-section-imgs {
+  padding: 60px 0 0;
+}
+.intro-wrap .intro-section-imgs img {}
+.intro-wrap .intro-section-imgs .img1 {
+  width: 470px;
+  margin-left: -119px;
+  margin-bottom: -50px;
+}
+.intro-wrap .intro-section-imgs .img2 {
+  width: 220px;
+  margin-left: -130px;
+}
+.intro-wrap .intro-section-text p:first-child {
+  margin-bottom: 16px;
+}
+.intro-wrap .intro-section-text p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.intro-wrap .intro-section:last-child .intro-title {
+  margin-top: 140px;
+}
+.intro-wrap .intro-section .logo-state-img {
+  width: 100%;
+}
+.intro-wrap .intro-section .intro-section-btm-text {
+  width: 758px;
+  margin: 0 auto 0;
+}
+.intro-wrap .intro-section .intro-section-btm-text p {
+  margin-bottom: 102px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: center;
+}
+.intro-wrap .intro-section .intro-section-btm-text img {
+  width: 554px;
+  display: block;
+  margin: 0 auto;
+}
+.intro-wrap .intro-section .section-text-sub  {
+  display: block;
+  text-align: center;
+  margin-top: 46px;
+  font-size: 16px;
+}
+
+.intro-wrap .intro-section .logo-down-btns {
+  margin-top: 66px;
+  gap: 20px;
+}
+.intro-wrap .intro-section .logo-down-btns a {
+  width: 200px;
+  line-height: 38px;
+}
+
+/* YOUTUBE VIDEO */
+.youtube {
+  position: relative;
+  height: 380px;
+  background-color: #333;
+  overflow: hidden;
+}
+.youtube .youtube__area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  margin-top: calc(1920px  * 9 / 16 / -2);
+  width: 1920px;
+  /* background-color: orange; */
+}
+.youtube .youtube__area::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.youtube .youtube__cover {
+  background-image: url(./image/video_cover_pattern.png);
+  background-color: rgba(0,0,0,.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ACCODION */
+.panel-question {
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.panel-heading {
+  font-weight: bold;
+  padding: 5px;
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.panel-body {
+  padding: 15px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+#btn-collapse {
+  margin-bottom: 10px;
+  background-color: #999;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  float: right;
+}

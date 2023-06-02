@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="전북공유경제 가치앗이">
+  <meta name="keywords" content="가치앗이">
+  <meta name="description" content="전북 최초 공유경제 플랫폼입니다">
+  <meta name="author" content="haeun">
+  <!-- 숫자로 된 항목을 전화번호로 인식하는걸 방지 -->
+  <meta name="format-detection" content="telephone=no">
+  
+  <!-- FAVICON -->
+  <link rel="icon" href="./favicon.png"/>
+  
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="가치앗이">
+  <meta property="og:url" content="/">
+  <meta property="og:image" content="/">
+  <meta property="og:description" content="/">
+  
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:url" content="/">
+  <meta name="twitter:image" content="/">
+  <meta name="twitter:description" content="/">
+  <title>공유장터</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/reset.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/intro.css">
+  <!-- GSAP & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="module" src="../src/js/intro.js" defer></script>
+  <script type="module" src="../src/js/common.js" defer></script>
+  <script type="module" src="../src/js/youtube2.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header id="header">
+      <!-- HEADER TOP -->
+      <div class="header-top clearfix">
+        <div class="inner">
+          <ul class="header-top-user inner-right flex">
+            <li><a href="/login/login.html">로그인</li></a>
+            <li><a href="javascript:void(0)">회원가입</li></a>
+            <li><a href="javascript:void(0)">마이페이지</li></a>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- HEADER BOTTOM -->
+      <div class="header-btm">
+        <div class="inner clearfix">
+          <div class="header-btm-box inner-left flex clearfix">
+            <a class="logo" href="#"></a>
+            <ul id="gnb" class="main-menu toggle flex clearfix">
+              <li class="main-menu-li">
+                <a href="javascript:void(0)" class="dep1">가치앗이소개</a>
+                <ul class="sub-menu-items">
+                  <li>
+                    <a class="dep2" href="/page/intro.html">가치앗이소개</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-li">
+                <a href="javascript:void(0)" class="dep1">공유장터</a>
+                <ul class="sub-menu-items">
+                  <li><a class="dep2" href="javascript:void(0)">물건공유</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">공간공유</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">재능공유</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">디지털공유</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">공유누리</a></li>
+                </ul>
+              </li>
+
+              <li class="main-menu-li">
+                <a class="dep1" href="javascript:void(0)">공유경제</a>
+                <ul class="sub-menu-items">
+                  <li><a class="dep2" href="javascript:void(0)">공유지도</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">공유실험실</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">공유자원요청</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">디지털공유</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">공유시범사업</a></li>
+                </ul>
+              </li>
+              <li class="main-menu-li">
+                <a class="dep1" href="javascript:void(0)">아카이브</a>
+                <ul class="sub-menu-items">
+                  <li><a class="dep2" href="javascript:void(0)">가치앗이소식</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">참여게시판</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="sub-bg"></div>
+            
+            <div class="header-btm-box inner-right flex">
+              <a href="javascript:void(0)"
+              class="header-btn--regi btn btn--primary-line h24 flex">거점등록</a>
+              <a href="javascript:void(0)"
+              class="header-btn--regi btn btn--primary h24 flex">자원등록</a>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      <!-- //header-btm -->
+
+    </header>
+
+    <section class="sub-banner">
+      <div class="inner">
+        <h2>가치앗이소개</h2>
+      </div>
+    </section>
+
+    <section class="tab-section intro-tab">
+      <div class="inner">
+        <div class="tab-top tab-num-4">
+          <button class="tab-btn active">공유경제/가치앗이란?</button>
+          <button class="tab-btn">BI소개</button>
+          <button class="tab-btn">이용가이드</button>
+          <button class="tab-btn">자주묻는질문</button>
+        </div>
+      </div>
+
+      <div id="ajax_div"></div>
+    </section>
+  </div>
+  <!-- FOOTER -->
+  <footer class="sub-footer">
+    <div class="inner">
+      <section class="footer-left">
+
+        <a href="javascript:void(0)" class="footer-logo">
+          <img src="../src/image/footer-logo.png" alt="경제통상진흥원">
+        </a>
+
+        <ul class="footer-shortcut flex">
+          <li><a href="javascript:void(0)">서비스이용약관</a></li>
+          <li><a href="javascript:void(0)">개인정보보호정책</a></li>
+          <li><a href="javascript:void(0)">이메일 무단수집거부</a></li>
+        </ul>
+
+        <ul class="footer-info flex">
+          <li>yright <span class="this-year"></span> kj All Right Reserved</li>
+          <li>전라북도 전주시 덕진구 팔과정로 164</li>
+          <li>TEL  063-711-2076</li>
+          <li>E-MAIL  mulan@jbba.krcop</li>
+        </ul>
+
+      </section>
+
+      <section class="footer-right">
+        <ul class="social flex">
+          <li>
+            <a href="https://www.youtube.com/@jbba">
+              <img src="../src/image/footer-you.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="../src/image/footer-in.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="../src/image/footer-fa.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+  </footer>
+</body>
+</html>

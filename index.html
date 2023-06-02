@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="전북공유경제 가치앗이">
+  <meta name="keywords" content="가치앗이">
+  <meta name="description" content="전북 최초 공유경제 플랫폼입니다">
+  <meta name="author" content="haeun">
+  <!-- 숫자로 된 항목을 전화번호로 인식하는걸 방지 -->
+  <meta name="format-detection" content="telephone=no">
+  
+  <!-- FAVICON -->
+  <link rel="icon" href="./favicon.png"/>
+  
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="가치앗이">
+  <meta property="og:url" content="/">
+  <meta property="og:image" content="/">
+  <meta property="og:description" content="/">
+  
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:url" content="/">
+  <meta name="twitter:image" content="/">
+  <meta name="twitter:description" content="/">
+  <title>가치앗이</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/common.css">
+  <link rel="stylesheet" href="./src/css/main.css">
+  <!-- GSAP & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="./src/js/main.js" defer></script>
+  <script src="./src/js/common.js" defer></script>
+  <script src="./src/js/youtube.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header id="header">
+      <!-- HEADER TOP -->
+      <div class="header-top clearfix">
+        <div class="inner">
+          <ul class="header-top-user inner-right flex">
+            <li><a href="./login/login.html">로그인</li></a>
+            <li><a href="javascript:void(0)">회원가입</li></a>
+            <li><a href="javascript:void(0)">마이페이지</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <!-- HEADER BOTTOM -->
+      <div class="header-btm">
+        <div class="inner clearfix">
+          <div class="header-btm-box inner-left flex clearfix">
+            <a class="logo" href="#"></a>
+            <ul id="gnb" class="main-menu toggle flex clearfix">
+              <li class="main-menu-li">
+                <a href="javascript:void(0)" class="dep1">가치앗이소개</a>
+                <ul class="sub-menu-items">
+                  <li>
+                    <a class="dep2" href="./page/intro.html">가치앗이소개</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-li">
+                <a href="javascript:void(0)" class="dep1">공유장터</a>
+                <ul class="sub-menu-items">
+                  <li><a class="dep2" href="javascript:void(0)">물건공유</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">공간공유</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">재능공유</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">디지털공유</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">공유누리</a></li>
+                </ul>
+              </li>
+
+              <li class="main-menu-li">
+                <a class="dep1" href="javascript:void(0)">공유경제</a>
+                <ul class="sub-menu-items">
+                  <li><a class="dep2" href="javascript:void(0)">공유지도</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">공유실험실</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">공유자원요청</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">디지털공유</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">공유시범사업</a></li>
+                </ul>
+              </li>
+              <li class="main-menu-li">
+                <a class="dep1" href="javascript:void(0)">아카이브</a>
+                <ul class="sub-menu-items">
+                  <li><a class="dep2" href="javascript:void(0)">가치앗이소식</a></li>
+                  <li><a class="dep2" href="javascript:void(0)">참여게시판</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="sub-bg"></div>
+            
+            <div class="header-btm-box inner-right flex">
+              <a href="javascript:void(0)"
+              class="header-btn--regi btn btn--primary-line h24 flex">거점등록</a>
+              <a href="javascript:void(0)"
+              class="header-btn--regi btn btn--primary h24 flex">자원등록</a>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+      <!-- //header-btm -->
+
+    </header>
+
+    <!-- VISUAL -->
+    <section class="visual">
+      <div class="inner clearfix">
+        <!-- LEFT -->
+        <div class="inner-left">
+
+          <div class="visual-left-text fade-in">
+            <span class="sub-text">서로의 가치를 공유하다</span>
+            <span class="sub-title">전북 최초의 공유경제 플랫폼</span>
+            <h1 class="title">
+              <img src="./src/image/visual-title.png" alt="가치앗이">
+            </h1>
+          </div>
+
+          <!-- SEARCH -->
+          <div class="visual-left-search ">
+
+            <form action="/" class="flex">
+              <div class="search-left">
+                <div class="search-menu-wrap flex">
+                
+                  <div class="btn-ck">
+                    <input type="radio" 
+                    id="search-item01"
+                    name="searchItem"
+                    value="all"
+                    checked>
+                    <label for="search-item01">
+                      <span>통합검색</span>
+                    </label>
+                  </div>
+                  <div class="btn-ck">
+                    <input type="radio" 
+                          id="search-item02"
+                          value="object"
+                          name="searchItem">
+                    <label for="search-item02">
+                      <span>물건공유</span>
+                    </label>
+                  </div>
+                  <div class="btn-ck">
+                    <input type="radio" 
+                          id="search-item03"
+                          value="space"
+                          name="searchItem">
+                    <label for="search-item03">
+                      <span>공간공유</span>
+                    </label>
+                  </div>
+                  <div class="btn-ck">
+                    <input type="radio" 
+                          id="search-item04"
+                          value="talent"
+                          name="searchItem">
+                    <label for="search-item04">
+                      <span>재능공유</span>
+                    </label>
+                  </div>
+                  <div class="btn-ck">
+                    <input type="radio" 
+                          id="search-item05"
+                          value="degital"
+                          name="searchItem">
+                    <label for="search-item05">
+                      <span>디지털공유</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="search-input-wrap flex">
+                  <select name="" 
+                          id="obState"
+                          class="input h26">
+                    <option value="">자원전체</option>
+                  </select>
+                  <select name="" 
+                          id="obArea"
+                          class="input h26">
+                  </select>
+                  <input type="text"
+                        class="input h26"
+                        placeholder="검색할 내용을 입력해 주세요">
+                </div>
+              </div>
+
+              <div class="search-right">
+                <button class="search-right-btn btn btn--primary">
+                  <svg width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M28.5 16.828a12 12 0 1 0-12 12M12.5 14.161h.013M20.5 14.161h.013"/><path d="M13.167 20.828c.877.896 2.08 1.333 3.333 1.333M20.5 24.828a4 4 0 1 0 8 0 4 4 0 0 0-8 0zM27.433 27.761l2.4 2.4"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(.5 .828)" d="M0 0h32v32H0z"/></clipPath></defs></svg>
+                  검색하기
+                </button>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="inner-right visual-right">
+          <div class="fade-in">
+            <img class="visual-right-img vs-img05" src="./src/image/visual-g-05.png" alt="">
+          </div>
+          <div class="fade-in">
+            <img class="visual-right-img vs-img01" src="./src/image/visual-g-01.png" alt="">
+          </div>
+          <div class="fade-in">
+            <img class="visual-right-img vs-img02" src="./src/image/visual-g-02.png" alt="">
+          </div>
+          <div class="fade-in">
+            <img class="visual-right-img vs-img03" src="./src/image/visual-g-03.png" alt="">
+          </div>
+          <div class="fade-in">
+            <img class="visual-right-img vs-img04" src="./src/image/visual-g-04.png" alt="">
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- MENU STATE BUTTON -->
+    <section class="menu-state">
+      <div class="inner">
+        <div class="flex">
+          <a href="javascript:void(0)" class="menu-state-box">
+            <span class="sub">필요한 물건 당근하지 말고,</span>
+            <span class="title">물건공유</span>
+            <img src="./src/image/ob-01.png" alt="물건공유">
+          </a>
+          <a href="javascript:void(0)" class="menu-state-box">
+            <span class="sub">모임, 작업, 사무실이 필요할땐</span>
+            <span class="title">공간공유</span>
+            <img src="./src/image/ob-02.png" alt="공간공유">
+          </a>
+          <a href="javascript:void(0)" class="menu-state-box">
+            <span class="sub">누군가에겐 필요한 나의재능</span>
+            <span class="title">재능공유</span>
+            <img src="./src/image/ob-03.png" alt="재능공유">
+          </a>
+          <a href="javascript:void(0)" class="menu-state-box">
+            <span class="sub">눈이 즐거운 영상공유</span>
+            <span class="title">디지털공유</span>
+            <img src="./src/image/ob-04.png" alt="디지털공유">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="review">
+      <div class="inner">
+        <h2 class="section-title">최근리뷰</h2>
+        <div class="flex">
+
+          <div class="rev-box">
+            <div class="front">
+              <span class="user-name">이*영</span>
+              <span class="product-name">전기자전거</span>
+              <div class="rev-star star-5">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+              </div>
+              <span class="rev-text">
+                구매전에 사용해보고 싶어 이용해보았습니다.
+                생각했던대로여서, 바로 구매했습니다.
+                고가의 제품이라 살까말까 망설였는데 가치앗이에서
+                사용해볼 수 있어서 좋았습니다!
+                구매전에 사용해보고 싶어 이용해보았습니다.
+                생각했던대로여서, 바로 구매했습니다.
+                고가의 제품이라 살까말까 망설였는데 가치앗이에서
+                사용해볼 수 있어서 좋았습니다!
+              </span>
+            </div>
+            <div class="back">
+              <img src="./src/image/rev-back01.png" alt="">
+              <div class="back-content">
+                <span class="product-name">전기자전거</span>
+                <a href="javascript:void(0)" class="btn btn--secondary h32">리뷰보러가기</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rev-box">
+            <div class="front">
+              <span class="user-name">이*라</span>
+              <span class="product-name">도서문화공간 조용한흥분색</span>
+              <div class="rev-star star-5">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+              </div>
+              <span class="rev-text">
+                독서 모임공간을 찾고 있었는데,
+                마침 가치앗이에서 적당한 장소를 찾을수 있었습
+                니다. 넓고 깨끗하고 깔끔한 인테리어 덕에 
+                기분좋게 모임을 할수 있었습니다.
+                독서 모임공간을 찾고 있었는데,
+                마침 가치앗이에서 적당한 장소를 찾을수 있었습
+                니다. 넓고 깨끗하고 깔끔한 인테리어 덕에 
+                기분좋게 모임을 할수 있었습니다.
+              </span>
+            </div>
+
+            <div class="back">
+              <img src="./src/image/rev-back03.png" alt="전기자전거">
+              <div class="back-content">
+                <span class="product-name">도서문화공간 조용한흥분색</span>
+                <a href="javascript:void(0)" class="btn btn--secondary h32">리뷰보러가기</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="rev-box">
+            <div class="front">
+              <span class="user-name">서*주</span>
+              <span class="product-name">전기자전거</span>
+              <div class="rev-star star-5">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+              </div>
+              <span class="rev-text">
+                구매전에 사용해보고 싶어 이용해보았습니다.
+                생각했던대로여서, 바로 구매했습니다.
+                고가의 제품이라 살까말까 망설였는데 가치앗이에서
+                사용해볼 수 있어서 좋았습니다!
+              </span>
+            </div>
+
+            <div class="back">
+              <img src="./src/image/rev-back01.png" alt="전기자전거">
+              <div class="back-content">
+                <span class="product-name">전기자전거</span>
+                <a href="javascript:void(0)" class="btn btn--secondary h32">리뷰보러가기</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rev-box">
+            <div class="front">
+              <span class="user-name">김*한</span>
+              <span class="product-name">도서문화공간 조용한흥분색</span>
+              <div class="rev-star star-5">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+              </div>
+              <span class="rev-text">
+                독서모임장소는 한곳으로 정해졌습니다.
+              </span>
+            </div>
+
+            <div class="back">
+              <img src="./src/image/rev-back03.png" alt="전기자전거">
+              <div class="back-content">
+                <span class="product-name">도서문화공간 조용한흥분색</span>
+                <a href="javascript:void(0)" class="btn btn--secondary h32">리뷰보러가기</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rev-box">
+            <div class="front">
+              <span class="user-name">박*규</span>
+              <span class="product-name">전기 자전거</span>
+              <div class="rev-star star-5">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+              </div>
+              <span class="rev-text">
+                구매전에 사용해보고 싶어 이용해보았습니다.
+                생각했던대로여서, 바로 구매했습니다.
+                고가의 제품이라 살까말까 망설였는데 가치앗이에서
+                사용해볼 수 있어서 좋았습니다!
+              </span>
+            </div>
+
+            <div class="back">
+              <img src="./src/image/rev-back01.png" alt="전기자전거">
+              <div class="back-content">
+                <span class="product-name">전기자전거</span>
+                <a href="javascript:void(0)" class="btn btn--secondary h32">리뷰보러가기</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rev-box">
+            <div class="front">
+              <span class="user-name">김*명</span>
+              <span class="product-name">달러구트 꿈 백화점</span>
+              <div class="rev-star star-5">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+                <img src="./src/image/star.png" alt="">
+              </div>
+              <span class="rev-text">
+                읽고 싶은 도서입니다.
+                마침 공유경제에 있어 볼수 있었습니다.
+              </span>
+            </div>
+            <div class="back">
+              <img src="./src/image/rev-back02.png" alt="달러구트 꿈 백화점">
+              <div class="back-content">
+                <span class="product-name">달러구트 꿈 백화점</span>
+                <a href="javascript:void(0)" class="btn btn--secondary h32">리뷰보러가기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YOUTUBE VIDEO -->
+    <section class="youtube">
+      <div class="youtube__area">
+          <div id="player"></div>
+      </div>
+      <div class="youtube__cover"></div>
+
+    </section>
+
+    <!-- PRODUCT -->
+    <section class="product-list">
+      <div class="inner">
+
+        <!-- OBJECT -->
+          <section class="object-list product-section section">
+            <h2 class="section-title">물건공유</h2>
+
+            <div class="flex posting-container">
+              <!-- <a href="javascript:void(0)" class="object-item">
+                <div class="ob-img">
+                  <img class="no-img" src="./src/image/no-img.png" alt="이미지없음">
+                  <img class="ob-icon" src="./src/image/menu-state-01.png" alt="물건아이콘">
+                </div>
+                <span class="ob-title text-line1">소형가습기</span>
+                <span class="ob-addr">전북 무주군</span>
+                <div class="pay">
+                  <span class="ob-sum">500원</span>
+                  <span class="ob-point">500앗이 0원</span>
+                </div>
+                <span class="ob-state">생활/주방</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a> -->
+            </div>
+          </section>
+
+          <!-- SPACE -->
+          <section class="space-list product-section section">
+            <h2 class="section-title">공간공유</h2>
+
+            <div class="flex">
+              <a href="javascript:void(0)" class="object-item space-item">
+                <div class="ob-img">
+                  <img class="no-img" src="./src/image/tmp/tmp-sp-01.png" alt="이미지없음">
+                  <img class="ob-icon" src="./src/image/menu-state-02.png" alt="공간아이콘">
+                </div>
+                <span class="ob-title text-line1">소형가습기</span>
+                <span class="ob-addr">전북 무주군</span>
+                <div class="pay">
+                  <span class="ob-sum">500원</span>
+                  <span class="ob-point">500앗이 0원</span>
+                </div>
+                <span class="ob-state">생활/주방</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="object-item space-item">
+                <div class="ob-img">
+                  <img class="in-img" src="./src/image/tmp/tmp-sp-02.png" alt="소형가습기">
+                  <img class="ob-icon" src="./src/image/menu-state-02.png" alt="물건아이콘">
+                </div>
+                <span class="ob-title text-line1">소형가습기</span>
+                <span class="ob-addr">전북 전주시 홍산북로 60-10</span>
+                <div class="pay">
+                  <span class="ob-sum">2,500원</span>
+                  <span class="ob-point">2,500앗이</span>
+                </div>
+                <span class="ob-state">생활/주방</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="object-item space-item">
+                <div class="ob-img">
+                  <img class="in-img" src="./src/image/tmp/tmp-sp-03.png" alt="이미지없음">
+                  <img class="ob-icon" src="./src/image/menu-state-02.png" alt="공간아이콘">
+                </div>
+                <span class="ob-title text-line1">카페 모임장소</span>
+                <span class="ob-addr">전북 군산시 산단남북로</span>
+                <div class="pay">
+                  <span class="ob-sum">0원</span>
+                  <span class="ob-point">0앗이</span>
+                </div>
+                <span class="ob-state">생활/주방</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="object-item space-item">
+                <div class="ob-img">
+                  <img class="in-img" src="./src/image/tmp/tmp-sp-04.png" alt="이미지없음">
+                  <img class="ob-icon" src="./src/image/menu-state-02.png" alt="공간아이콘">
+                </div>
+                <span class="ob-title text-line1">공공놀이방</span>
+                <span class="ob-addr">전북 익산시</span>
+                <div class="pay">
+                  <span class="ob-sum">25,000원</span>
+                  <span class="ob-point">25,000앗이 0원</span>
+                </div>
+                <span class="ob-state">생활/주방</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <!-- TALENT -->
+          <section class="talent-list product-section section">
+            <h2 class="section-title">재능공유</h2>
+
+            <div class="flex">
+              <a href="javascript:void(0)" class="object-item talent-item">
+                <div class="ob-img">
+                  <img class="no-img" src="./src/image/tmp/tmp-ta-01.png" alt="">
+                  <img class="ob-icon" src="./src/image/menu-state-03.png" alt="재능아이콘">
+                </div>
+                <span class="ob-title text-line1">엑셀강의</span>
+                <span class="ob-addr">전북 무주군</span>
+                <div class="pay">
+                  <span class="ob-sum">500원</span>
+                  <span class="ob-point">500앗이 0원</span>
+                </div>
+                <span class="ob-state">생활/주방</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="object-item talent-item">
+                <div class="ob-img">
+                  <img class="in-img" src="./src/image/tmp/tmp-ta-02.png" alt="">
+                  <img class="ob-icon" src="./src/image/menu-state-03.png" alt="재능아이콘">
+                </div>
+                <span class="ob-title text-line1">동영상 편집 기초</span>
+                <span class="ob-addr">전북 전주시 홍산북로 60-10</span>
+                <div class="pay">
+                  <span class="ob-sum">2,500원</span>
+                  <span class="ob-point">2,500앗이</span>
+                </div>
+                <span class="ob-state">생활/주방</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="object-item talent-item">
+                <div class="ob-img">
+                  <img class="in-img" src="./src/image/tmp/tmp-ta-03.png" alt="">
+                  <img class="ob-icon" src="./src/image/menu-state-03.png" alt="재능아이콘">
+                </div>
+                <span class="ob-title text-line1">통기타 기초강습</span>
+                <span class="ob-addr">전북 군산시 산단남북로</span>
+                <div class="pay">
+                  <span class="ob-sum">0원</span>
+                  <span class="ob-point">0앗이</span>
+                </div>
+                <span class="ob-state">생활/주방</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="object-item talent-item">
+                <div class="ob-img">
+                  <img class="in-img" src="./src/image/tmp/tmp-ta-04.png" alt="">
+                  <img class="ob-icon" src="./src/image/menu-state-03.png" alt="재능아이콘">
+                </div>
+                <span class="ob-title text-line1">도자기 공예</span>
+                <span class="ob-addr">전북 익산시</span>
+                <div class="pay">
+                  <span class="ob-sum">25,000원</span>
+                  <span class="ob-point">25,000앗이 0원</span>
+                </div>
+                <span class="ob-state">생활/주방</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <!-- DIGITAL -->
+          <section class="digital-list product-section">
+            <h2 class="section-title">재능공유</h2>
+
+            <div class="flex">
+              <a href="javascript:void(0)" class="object-item degital-item">
+                <div class="ob-img">
+                  <img class="no-img" src="./src/image/tmp/tmp-di-01.png" alt="">
+                  <img class="ob-icon" src="./src/image/menu-state-04.png" alt="디지털아이콘">
+                </div>
+                <span class="ob-title text-line1">완주군 패러글라이딩 장소</span>
+                <span class="ob-state">기타</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="object-item digital-item">
+                <div class="ob-img">
+                  <img class="in-img" src="./src/image/tmp/tmp-di-02.png" alt="">
+                  <img class="ob-icon" src="./src/image/menu-state-04.png" alt="디지털아이콘">
+                </div>
+                <span class="ob-title text-line1">공유경제 당신이 몰랐던 이야기에 대해</span>
+                <span class="ob-state">정치/경제</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="object-item digital-item">
+                <div class="ob-img">
+                  <img class="in-img" src="./src/image/tmp/tmp-di-03.png" alt="">
+                  <img class="ob-icon" src="./src/image/menu-state-04.png" alt="디지털아이콘">
+                </div>
+                <span class="ob-title text-line1">dpr cream 느낌의 감성</span>
+                <span class="ob-state">문화/예술</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+              <a href="javascript:void(0)" class="object-item">
+                <div class="ob-img">
+                  <img class="in-img" src="./src/image/tmp/tmp-di-04.png" alt="">
+                  <img class="ob-icon" src="./src/image/menu-state-04.png" alt="디지털아이콘">
+                </div>
+                <span class="ob-title text-line1">Michael Jackson, Bruno Mars</span>
+                <span class="ob-state">문화/예술</span>
+                <div class="ob-like-star flex">
+                  <div class="ob-star">
+                    <img src="./src/image/star.png" alt="">
+                    <span>23</span>
+                  </div>
+                  <div class="ob-like">
+                    <img src="./src/image/like.png" alt="">
+                    <span>23</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+
+      </div>
+    </section>
+
+    <!-- NOTICE -->
+    <section class="notice">
+      <h2 class="section-title">가치앗이 소식</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./src/image/tmp/tmp-notice01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/image/tmp/tmp-notice02.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./src/image/tmp/tmp-notice03.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./src/image/tmp/tmp-notice01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./src/image/tmp/tmp-notice02.png" alt="">
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-prev">
+          <!-- <span class="material-icons">arrow_back</span> -->
+          <span class="material-symbols-outlined">
+              keyboard_backspace
+              </span>
+      </div>
+      <div class="swiper-next">
+          <!-- <span class="material-icons">arrow_forward</span> -->
+          <span class="material-symbols-outlined">
+            arrow_right_alt
+          </span>
+      </div>
+    </section>
+
+    <!-- ENTERPRISE -->
+    <section class="enterprise section">
+      <div class="inner clearfix">
+        <div class="inner-left">
+          <div class="ent-box">
+            <h2>공유기업(단체)</h2>
+            <button class="btn btn-line btn-ent-regi h32">기업등록요청</button>
+            <div class="ent-search">
+              <span>공유기업검색</span>
+              <input type="text" 
+                      name="entSearch" 
+                      id="entSearch" 
+                      class="input h32"
+                      placeholder="검색할 기업명을 입력해 주세요">
+            </div>
+          </div>
+        </div>
+
+        <div class="inner-right">
+          <div class="ent-list">
+            <h2>공유기업(단체)들</h2>
+            <span>로고를 클릭하시면 기업소개 페이지로 이동합니다</span>
+
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    1
+                  </div>
+                  <div class="swiper-slide">
+                    2
+                  </div>
+              </div>
+      
+            </div>
+            <div class="swiper-pagination"></div>
+      
+            <div class="swiper-prev">
+                <!-- <span class="material-icons">arrow_back</span> -->
+                <span class="material-symbols-outlined">
+                    keyboard_backspace
+                    </span>
+            </div>
+            <div class="swiper-next">
+                <!-- <span class="material-icons">arrow_forward</span> -->
+                <span class="material-symbols-outlined">
+                  arrow_right_alt
+                </span>
+            </div>
+            <!-- //SWIPER -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner">
+      <section class="footer-left">
+
+        <a href="javascript:void(0)" class="footer-logo">
+          <img src="./src/image/footer-logo.png" alt="경제통상진흥원">
+        </a>
+
+        <ul class="footer-shortcut flex">
+          <li><a href="javascript:void(0)">서비스이용약관</a></li>
+          <li><a href="javascript:void(0)">개인정보보호정책</a></li>
+          <li><a href="javascript:void(0)">이메일 무단수집거부</a></li>
+        </ul>
+
+        <ul class="footer-info flex">
+          <li>yright <span class="this-year"></span> kj All Right Reserved</li>
+          <li>전라북도 전주시 덕진구 팔과정로 164</li>
+          <li>TEL  063-711-2076</li>
+          <li>E-MAIL  mulan@jbba.krcop</li>
+        </ul>
+
+      </section>
+
+      <section class="footer-right">
+        <ul class="social flex">
+          <li>
+            <a href="https://www.youtube.com/@jbba">
+              <img src="./src/image/footer-you.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./src/image/footer-in.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./src/image/footer-fa.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+  </footer>
+</body>
+</html>

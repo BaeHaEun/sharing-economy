@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "title": "소형가습기",
+      "address": "전북 군산시 산단남북로",
+      "pay": "500원",
+      "point": "500앗이",
+      "smoney": "0원",
+      "state": "",
+      "category": "생활/주방",
+      "image": "data:image/jpeg;base64,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",
+      "author": "김철수",
+      "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "id": 1
+    },
+    {
+      "title": "소형가습기",
+      "address": "전북 군산시 산단남북로",
+      "pay": "500원",
+      "point": "500앗이",
+      "smoney": "0원",
+      "state": "",
+      "category": "생활/주방",
+      "image": "",
+      "author": "김철수",
+      "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "id": 2
+    },
+    {
+      "title": "달러구트 꿈 백화점",
+      "address": "전북 전주시 완산구 홍산북로 60-10",
+      "pay": "0원",
+      "point": "0앗이",
+      "smoney": "0원",
+      "state": "",
+      "category": "사무/취미",
+      "image": "",
+      "author": "이미진",
+      "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "id": 3
+    },
+    {
+      "title": "삼성전자 노트북",
+      "address": "전북 전주시 완산구 홍산북로 60-10",
+      "pay": "25,000원",
+      "point": "25,000앗이",
+      "smoney": "0원",
+      "state": "",
+      "category": "전자제품",
+      "image": "",
+      "author": "박나리",
+      "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
