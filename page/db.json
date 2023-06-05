@@ -16,7 +16,7 @@
       "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-ob-01.png?raw=true",
       "author": "김철수",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "object1"
+      "id": 1
     },
     {
       "title": "소형가습기",
@@ -29,7 +29,7 @@
       "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/no-img.png?raw=true",
       "author": "김철수",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "object2"
+      "id": 2
     },
     {
       "title": "달러구트 꿈 백화점",
@@ -42,7 +42,7 @@
       "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-ob-02.png?raw=true",
       "author": "이미진",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "object3"
+      "id": 3
     },
     {
       "title": "삼성전자 노트북",
@@ -55,7 +55,7 @@
       "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-ob-03.png?raw=true",
       "author": "박나리",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "object4"
+      "id": 4
     }
   ],
   "space": [
@@ -96,7 +96,7 @@
       "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-sp-03.png?raw=true",
       "author": "이미진",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "space3"
+      "id": 3
     },
     {
       "title": "공공놀이방",
@@ -109,7 +109,7 @@
       "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-sp-04.png?raw=true",
       "author": "박나리",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "space4"
+      "id": 4
     }
   ],
   "talent": [
@@ -150,7 +150,7 @@
       "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-ta-03.png?raw=true",
       "author": "김철수",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "talent3"
+      "id": "talent2"
     },
     {
       "title": "도자기공예",
@@ -163,50 +163,66 @@
       "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-ta-04.png?raw=true",
       "author": "김철수",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "talent4"
+      "id": "talent2"
     }
   ],
   "digital": [
     {
-      "title": "완주군 패러글라이딩 장소",
+      "title": "소형가습기",
+      "address": "전북 군산시 산단남북로",
+      "pay": "500원",
+      "point": "500앗이",
+      "smoney": "0원",
       "state": [
         {
           "name": "object",
-          "icon": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/menu-state-04.png?raw=true"
+          "icon": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/menu-state-01.png?raw=true"
         }
       ],
-      "category": "기타",
-      "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-di-01.png?raw=true",
+      "category": "생활/주방",
+      "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-ob-01.png?raw=true",
       "author": "김철수",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "digital1"
+      "id": 1
     },
     {
-      "title": "공유경제 당신이 몰랐던 이야기",
-      "state": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/menu-state-04.png?raw=true",
-      "category": "정치/경제",
+      "title": "소형가습기",
+      "address": "전북 군산시 산단남북로",
+      "pay": "500원",
+      "point": "500앗이",
+      "smoney": "0원",
+      "state": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/menu-state-01.png?raw=true",
+      "category": "생활/주방",
       "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/no-img.png?raw=true",
       "author": "김철수",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "digital2"
+      "id": 2
     },
     {
-      "title": "dpr cream 느낌의 감성비트",
-      "state": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/menu-state-04.png?raw=true",
-      "category": "문화/예술",
-      "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-di-03.png?raw=true",
+      "title": "달러구트 꿈 백화점",
+      "address": "전북 전주시 완산구 홍산북로 60-10",
+      "pay": "0원",
+      "point": "0앗이",
+      "smoney": "0원",
+      "state": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/menu-state-01.png?raw=true",
+      "category": "사무/취미",
+      "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-ob-02.png?raw=true",
       "author": "이미진",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "digital3"
+      "id": 3
     },
     {
-      "title": "Michael Jackson, Bruno Mas",
-      "state": "https://github.com/UnaMela/shar ing-economy/blob/main/src/image/menu-state-04.png?raw=true",
-      "category": "문화/예술",
-      "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-di-04.png?raw=true",
+      "title": "삼성전자 노트북",
+      "address": "전북 전주시 완산구 홍산북로 60-10",
+      "pay": "25,000원",
+      "point": "25,000앗이",
+      "smoney": "0원",
+      "state": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/menu-state-01.png?raw=true",
+      "category": "전자제품",
+      "image": "https://github.com/UnaMela/sharing-economy/blob/main/src/image/tmp/tmp-ob-03.png?raw=true",
       "author": "박나리",
       "authorImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "id": "digital4"
+      "id": 4
     }
   ],
   "comments": [

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url(./fonts.css);
+
 :root {
   --primary: #048079;
   --secondary: #55C2BC;
@@ -186,6 +188,8 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   z-index: 1;
+  font-weight: bold;
+  color: var(--secondary);
 }
 .tab-section .tab-top .tab-btn.active::before {
   content: '';
@@ -357,11 +361,196 @@ header + section {
   height: 103px;
   color: var(--primary);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: 'BMDOHYEON';
 } 
 .sub-banner + section {
   padding-top: 60px;
   box-sizing: content-box;
+}
+
+/* PRODUCT */
+.product-list {
+  padding: 90px 0;
+}
+.product-list .section {
+  margin-bottom: 76px;
+}
+.product-list .product-section .section-title {
+  margin-bottom: 16px;
+}
+.product-section > .flex {
+  gap: 36px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-section .flex .object-item {
+  width: 22%;
+  flex: 1 0 auto;
+}
+.product-section .flex .object-item .ob-img {
+  position: relative;
+  height: 233px;
+  min-height: 233px;
+  max-height: 233px;
+  overflow: hidden; 
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.product-section .flex .object-item .ob-img img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-section .flex .object-item .no-img {}
+.product-section .flex .object-item .ob-img .in-img {}
+.product-section .flex .object-item .ob-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 29px;
+  height: 26px;
+}
+.product-section .flex .object-item .ob-title {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.product-section .flex .object-item .ob-addr {
+  display: block;
+  font-size: 14px;
+  color: #9a9a9a;
+  margin-bottom: 10px;
+}
+.product-section .flex .object-item .pay {
+  font-size: 18px;
+  color: var(--black);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.product-section .flex .object-item .pay .ob-sum {
+  font-size: inherit;
+  margin-right: 6px;
+}
+.product-section .flex .object-item .pay .ob-point {
+  color: var(--primary);
+  font-weight: 500;
+}
+.product-section .flex .object-item .ob-state {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--primary);
+  background-color: var(--tertiary);
+  border-radius: 4px;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+}
+.product-section .flex .object-item .ob-like-star.flex {
+  justify-content: flex-start;
+}
+.product-section .flex .object-item .ob-like-star span {
+  font-size: 12px;
+  color: #9A9A9A;
+  vertical-align: top;
+}
+.product-section .flex .object-item .ob-like-star img {
+  width: 12px;
+  height: 12px;
+  vertical-align: top;
+}
+.product-section .flex .object-item .ob-star {
+  position: relative;
+  padding-right: 10px;
+}
+.product-section .flex .object-item .ob-star:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 8px;
+  background-color: var(--gray-light);
+}
+.product-section .flex .object-item .ob-like {
+  padding-left: 10px;
+}
+
+/* SEARCH */
+form.sub-search-form {
+  position: relative;
+  justify-content: space-between;
+  padding: 44px 24px 36px;
+  border-bottom: 1px solid var(--gray0);
+}
+form.sub-search-form .search-left .search-input-wrap {
+  font-size: 14px;
+}
+form.sub-search-form .search-left .search-input-wrap select {
+  margin-right: 16px;
+  font-size: inherit;
+  width: 120px;
+}
+form.sub-search-form .search-left .search-input-wrap input {
+  margin-left: 10px;
+  margin-right: 16px;
+  width: 250px;
+  font-size: inherit;
+}
+form.sub-search-form .search-left .search-input-wrap .search-btn {
+  width: 96px;
+  display: block;
+}
+form.sub-search-form .search-right {
+  position: absolute;
+  right: 26px;
+}
+form.sub-search-form .search-right a {
+  display: block;
+  width: 96px;
+  line-height: 30px;
+}
+
+
+/* YOUTUBE VIDEO */
+.youtube {
+  position: relative;
+  height: 380px;
+  background-color: #333;
+  overflow: hidden;
+}
+.youtube .youtube__area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  margin-top: calc(1920px  * 9 / 16 / -2);
+  width: 1920px;
+  /* background-color: orange; */
+}
+.youtube .youtube__area::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.youtube .youtube__cover {
+  background-image: url(./image/video_cover_pattern.png);
+  background-color: rgba(0,0,0,.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* FOOTER */

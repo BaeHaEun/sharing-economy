@@ -37,7 +37,6 @@ for(let i=0; i<btn.length; i++){
     }
 }
 
-
 // ACCODION
 const question = document.querySelectorAll(".panel-question");
 const heading = document.querySelectorAll(".panel-heading");

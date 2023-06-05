@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "db": "json-server --watch ./db.json"
+    "db": "json-server --watch ./db.json",
+    "db:f": "json-server db.json --static ./some-other-dir",
+    "clean": "rm -rf node_modules"
   },
   "keywords": [],
   "author": "",
