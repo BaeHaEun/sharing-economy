@@ -4,7 +4,7 @@ const footer = document.querySelector("footer");
 header.innerHTML = `<div class="header-top clearfix">
         <div class="inner">
           <ul class="header-top-user inner-right flex">
-            <li><a href="/login/login.html">로그인</li></a>
+            <li><a href="./login/login.html">로그인</li></a>
             <li><a href="javascript:void(0)">회원가입</li></a>
             <li><a href="javascript:void(0)">마이페이지</li></a>
           </ul>
@@ -15,20 +15,20 @@ header.innerHTML = `<div class="header-top clearfix">
       <div class="header-btm">
         <div class="inner clearfix">
           <div class="header-btm-box inner-left flex clearfix">
-            <a class="logo" href="/index.html"></a>
+            <a class="logo" href="./index.html"></a>
             <ul id="gnb" class="main-menu toggle flex clearfix">
               <li class="main-menu-li">
                 <a href="javascript:void(0)" class="dep1">가치앗이소개</a>
                 <ul class="sub-menu-items">
                   <li>
-                    <a class="dep2" href="/page/intro.html">가치앗이소개</a>
+                    <a class="dep2" href="./page/intro.html">가치앗이소개</a>
                   </li>
                 </ul>
               </li>
               <li class="main-menu-li">
                 <a href="javascript:void(0)" class="dep1">공유장터</a>
                 <ul class="sub-menu-items">
-                  <li><a class="dep2" href="/page/market.html">물건공유</a></li>
+                  <li><a class="dep2" href="./page/market.html">물건공유</a></li>
                   <li><a class="dep2" href="javascript:void(0)">공간공유</a></li>
                   <li><a class="dep2" href="javascript:void(0)">재능공유</a></li>
                   <li><a class="dep2" href="javascript:void(0)">디지털공유</a></li>
