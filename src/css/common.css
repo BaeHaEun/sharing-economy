@@ -381,18 +381,20 @@ header + section {
 }
 .product-section > .flex {
   gap: 36px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 .product-section .flex .object-item {
   width: 22%;
   flex: 1 0 auto;
+  max-width: 228px;
 }
 .product-section .flex .object-item .ob-img {
   position: relative;
   height: 233px;
   min-height: 233px;
-  max-height: 233px;
+  max-height: 233px;  
   overflow: hidden; 
   border-radius: 10px;
   margin-bottom: 20px;
